@@ -1,4 +1,4 @@
-package DB;
+package DB.DBStrucure;
 
 public interface IIndividual {
 

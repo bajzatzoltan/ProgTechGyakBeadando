@@ -1,4 +1,4 @@
-package DB;
+package DB.DBStrucure;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
