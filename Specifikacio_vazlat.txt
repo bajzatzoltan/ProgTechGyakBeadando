@@ -18,11 +18,13 @@ Technikai leírások:
 	
 	
 Felhasznált patternek:
+	DB:
 	A táblákat Singleton-ok reprezentálják, amelyek insert, update, delete, selectall publikus felületekkel rendelkeznek
 	A DB hozzáférési felületet egy ütemező feladatot ellátó singleton fogja ellátni, amely a kliens rész számára lesz hozzáférhető.
 	A táblák feltöltése Factory-val történik. (az abstract factory megvalósítását nem biztos, hogy meg tudom java-ban valósítani)
 	Ammenyiben időm engedi autentikációs résszel kiegészítem.
 	
+	KLIENS:
 	A kliens részben a DML műveleteket template-ben valósítom meg, amelyek mindegyike tartalmaz majd egy GetConnection, CreateDML metódust.
 	Ezzel update, insert, és delete DML műveletek valósíthatók meg.
 	
@@ -31,8 +33,15 @@ Felhasznált patternek:
 	
 	
 	
+	
 Tesztelés:
 	Publikus class felületek unit tesztelése elvárás. Szükség esetén mock-kolás is alkalmazandó.
+	
+	
+
+
+Kérdések: 
+	Publikus felületeket tesztelünk. A gettereket szökséges teszteni? Propertiket csak akkor tesztelek, ha
 
 
 
