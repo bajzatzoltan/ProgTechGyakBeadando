@@ -1,0 +1,31 @@
+
+
+Célok:
+	Az alkalmazás egy adatbázis reprezentáció megvalósítása, amelyhez csatlakozni lehet egy klienssel. 
+
+
+
+Megvalósítási vázlat:
+	A DB futáskor felépül és feltöltődik. 
+	A DB hozzáférést egy felület fogja biztosítani, amelyen keresztül a DML műveletek megvalósulhatnak.
+
+	A kliens egy konzolos alkalmazás amely képes lekérdezésekre, insert-ekre, update-ekre és delete-ekre. 
+	A main-ben történnek a DB DML műveleteinek indítása. A lekérdezésnél az adatokat  futáskor megjeleníti.
+	
+
+Technikai leírások:
+	
+	
+	
+Felhasznált patternek:
+	A táblákat Singleton-ok reprezentálják, amelyek insert, update, delete, selectall publikus felületekkel rendelkeznek
+	A DB hozzáférési felületet egy ütemező feladatot ellátó singleton fogja ellátni, amely a kliens rész számára lesz hozzáférhető.
+	A táblák feltöltése Factory-val történik. (az abstract factory megvalósítását nem biztos, hogy meg tudom java-ban valósítani)
+	Ammenyiben időm engedi autentikációs résszel kiegészítem.
+	
+	A kliens részben a DML műveletket template-ben valósítom meg, amelyek mindegyike tartalmaz majd egy GetConnection, CreateDML metúdust.
+	
+	A 
+
+
+
