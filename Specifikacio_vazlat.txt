@@ -26,7 +26,9 @@ Felhasznált patternek:
 	A kliens részben a DML műveleteket template-ben valósítom meg, amelyek mindegyike tartalmaz majd egy GetConnection, CreateDML metódust.
 	Ezzel update, insert, és delete DML műveletek valósíthatók meg.
 	
-	A Select DML műveletek adatmegjelenítéséért egy decorator pattern felel. Lekérések (jelen esetben 
+	A Select DML műveletek adatmegjelenítéséért egy decorator pattern felel. 
+	Lekérések (jelen esetben tablánként bekért adatok) a konkrét dekorelemek, míg a megjelenő adat egy feldekorált osztály Desplay metódus,
+	
 	
 	
 Tesztelés:
