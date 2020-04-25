@@ -24,9 +24,13 @@ Felhasznált patternek:
 	Ammenyiben időm engedi autentikációs résszel kiegészítem.
 	
 	A kliens részben a DML műveleteket template-ben valósítom meg, amelyek mindegyike tartalmaz majd egy GetConnection, CreateDML metódust.
-	Ez a update, insert, és delete DML műveletek valósíthatók meg.
+	Ezzel update, insert, és delete DML műveletek valósíthatók meg.
 	
-	A Select DML műveletek adatmegjelenítéséért egy decorator pattern felel.
+	A Select DML műveletek adatmegjelenítéséért egy decorator pattern felel. Lekérések (jelen esetben 
+	
+	
+Tesztelés:
+	Publikus class felületek unit tesztelése elvárás. Szükség esetén mock-kolás is alkalmazandó.
 
 
 
