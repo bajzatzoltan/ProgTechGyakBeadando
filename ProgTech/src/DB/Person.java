@@ -1,5 +1,8 @@
 package DB;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Person implements IIndividual{
@@ -35,6 +38,10 @@ public class Person implements IIndividual{
     {
         this.birthDay = birthDay;
         //this.age = currentDay-birthDay;
+        int tempCurrentYear = Calendar.getInstance().get(Calendar.YEAR);
+        LocalDate localdateBirthday = birthDay.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+        int birthdayYear = localdateBirthday.getYear();
+        this.age = tempCurrentYear - birthdayYear;
     }
     private int age;
     public int GetAge()
