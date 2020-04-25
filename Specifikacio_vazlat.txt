@@ -27,7 +27,7 @@ Felhasznált patternek:
 	Ezzel update, insert, és delete DML műveletek valósíthatók meg.
 	
 	A Select DML műveletek adatmegjelenítéséért egy decorator pattern felel. 
-	Lekérések (jelen esetben tablánként bekért adatok) a konkrét dekorelemek, míg a megjelenő adatért egy feldekorált osztály Display metódusmeghívása prezentálja.
+	Lekérések (jelen esetben tablánként bekért adatok) a konkrét dekorelemek, míg a megjelenő adatért egy feldekorált osztály Display metódusmeghívása lesz felelős.
 	
 	
 	
