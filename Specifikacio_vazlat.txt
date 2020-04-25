@@ -23,9 +23,10 @@ Felhasznált patternek:
 	A táblák feltöltése Factory-val történik. (az abstract factory megvalósítását nem biztos, hogy meg tudom java-ban valósítani)
 	Ammenyiben időm engedi autentikációs résszel kiegészítem.
 	
-	A kliens részben a DML műveletket template-ben valósítom meg, amelyek mindegyike tartalmaz majd egy GetConnection, CreateDML metúdust.
+	A kliens részben a DML műveletket template-ben valósítom meg, amelyek mindegyike tartalmaz majd egy GetConnection, CreateDML metódust.
+	Ez a update, insert, és delete DML műveletek valósíthatók meg.
 	
-	A 
+	A Select
 
 
 
