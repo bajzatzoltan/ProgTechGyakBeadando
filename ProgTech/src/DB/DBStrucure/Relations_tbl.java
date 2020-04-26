@@ -8,9 +8,12 @@ import java.util.List;
 public class Relations_tbl <P, C> {
     private volatile static Relations_tbl instance;
     private List<Relation> listRelations;
-    public List<Relation> GetListRelations() {
-        //deep copy kell
-        return listRelations;
+    public List<Relation> GetListRelations() throws CloneNotSupportedException{
+        List<Relation> cloneList = new ArrayList<Relation>();
+        for (Relation x: listRelations) {
+            cloneList.add((Relation)x.clone());
+        }
+        return cloneList;
     }
     private Relations_tbl() {
         listRelations = new ArrayList<Relation>();
@@ -21,14 +24,15 @@ public class Relations_tbl <P, C> {
         }
         return instance;
     }
-    public Relation AddRelation(P parent, C child) {
+    public void AddRelation(P parent, C child) {
         Relation relation = new Relation(parent, child);
         listRelations.add(relation);
-        return relation;
     }
     public void RemoveRelation(Relation relation) { //ezt átgondolni hogy legyen, a relation-t a táblákban kell tárolni valószínű
 
     }
+
+
 }
 
 

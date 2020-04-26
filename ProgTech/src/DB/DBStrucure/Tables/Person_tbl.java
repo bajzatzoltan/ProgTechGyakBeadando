@@ -1,6 +1,7 @@
 package DB.DBStrucure.Tables;
 
 import DB.DBStrucure.Individuals.IIndividual;
+import DB.DBStrucure.Individuals.IndividualFactory;
 import DB.DBStrucure.Individuals.Person;
 
 import java.util.ArrayList;
@@ -10,9 +11,11 @@ import java.util.List;
 
 public class Person_tbl implements ITable<Person> {
     private List<Person> listPerson;
+    private int rowId;
     private static volatile Person_tbl instance;
     private Person_tbl(){
         listPerson = new ArrayList<Person>();
+        rowId = 0;
     }
     public static Person_tbl GetInstance(){
         if (instance.equals(null)) {
@@ -21,20 +24,24 @@ public class Person_tbl implements ITable<Person> {
         return instance;
     }
     @Override
-    public List<Person> SelectAll() {
-        // deep copy-ra van szükség
-        return listPerson;
+    public List<Person> SelectAll() throws CloneNotSupportedException {
+        List<Person> cloneList = new ArrayList<Person>();
+        for (Person x: listPerson) {
+            cloneList.add((Person)x.clone());
+        }
+        return cloneList;
     }
     @Override
-    public void Insert(IIndividual individual) {
+    public void Insert(Person individual) {
+        rowId++;
+        listPerson.add((Person)(IndividualFactory.GetInstance().GetIndividual(rowId, "Person")));
+    }
+    @Override
+    public void Delete(Person individual) {
 
     }
     @Override
-    public void Delete(IIndividual individual) {
-
-    }
-    @Override
-    public void Update(IIndividual individual) {
+    public void Update(Person individual) {
 
     }
     @Override

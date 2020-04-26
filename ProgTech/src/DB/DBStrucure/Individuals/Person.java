@@ -5,7 +5,7 @@ import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.Date;
 
-public class Person implements IIndividual{
+public class Person implements IIndividual, Cloneable{
     private int ID;
     public int GetID()
     {
@@ -56,10 +56,12 @@ public class Person implements IIndividual{
         // a tábla példányban vizsgálni kell hogy a settlement tábla tartalmazza-e a fk-t ezt a táblában kell definiálni
         this.settlement_ID_fk = settlement_ID_fk;
     }
-
-
     public Person(int ID) // konstruktorba csak kötelező adatok kerülnek
     {
         this.ID = ID;
+    }
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }

@@ -1,6 +1,6 @@
 package DB.DBStrucure.Individuals;
 
-public class Enterprise implements IIndividual {
+public class Enterprise implements IIndividual, Cloneable {
     private int ID;
     public int GetID()
     {
@@ -32,6 +32,10 @@ public class Enterprise implements IIndividual {
     public Enterprise(int ID) // konstruktorba csak kötelező adatok kerülnek
     {
         this.ID = ID;
+    }
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 
 }
