@@ -1,4 +1,6 @@
 package DB.DBStrucure;
 
-public interface IRelation {
+public interface IRelation <P, C>{
+    public P getParent();
+    public C getChild();
 }
