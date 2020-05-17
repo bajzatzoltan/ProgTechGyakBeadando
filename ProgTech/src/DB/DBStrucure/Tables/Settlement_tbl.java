@@ -2,13 +2,15 @@ package DB.DBStrucure.Tables;
 
 import DB.DBStrucure.Individuals.IIndividual;
 import DB.DBStrucure.Individuals.IndividualFactory;
+import DB.DBStrucure.Individuals.Person;
 import DB.DBStrucure.Individuals.Settlement;
 import DB.DBStrucure.Relation;
+import DB.DBStrucure.Relations_tbl;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Settlement_tbl implements ITable<Settlement> {
+public class Settlement_tbl<P> implements ITable<Settlement> {
     private static Settlement_tbl instance;
     private List<Settlement> listSettlement;
     private int rowId;
@@ -32,18 +34,48 @@ public class Settlement_tbl implements ITable<Settlement> {
     }
 
     @Override
-    public void Delete(Settlement individual) {
-
+    public void Delete(int ID) {
+        int counter = 0;
+        while (counter < listSettlement.size()){
+            if (listSettlement.get(counter).GetID() == ID){
+                listSettlement.remove(counter);
+                counter = listSettlement.size() + 1;
+            }
+            counter++;
+        }
+        if (counter == listSettlement.size()){
+            throw  new ArrayIndexOutOfBoundsException("Settlement_tbl.listSettlement does not contain this ID");
+        }
     }
 
     @Override
-    public void Update(Settlement individual) {
-
+    public void Update(int ID, Settlement individual) {
+        for (Settlement x :  listSettlement) {
+            if (x.GetID() == ID) {
+                x = individual;
+            }
+        }
     }
 
     @Override
-    public void AddRelation() {
+    public Settlement GetInstanceByID(int ID) throws CloneNotSupportedException {
+        int counter = 0;
+        Settlement resultInstance = null;
+        while (counter < listSettlement.size()){
+            if (listSettlement.get(counter).GetID() == ID){
+                resultInstance = listSettlement.get(counter);
+            }
+            counter++;
+        }
+        if (resultInstance == null){
+            throw  new IndexOutOfBoundsException("Settlement_tbl.listSettlement does not contain this ID");
+        }
+        return (Settlement) resultInstance.clone();
+    }
 
+
+    private void AddRelation(P parent) {
+        Relations_tbl.GetInstance().AddRelation(parent, instance);
     }
 
     @Override

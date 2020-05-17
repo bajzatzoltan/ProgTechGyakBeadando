@@ -4,7 +4,7 @@ package DB.DBStrucure.Individuals;
 public class Settlement implements IIndividual, Cloneable  {
 
     private int ID;
-    public int getID() {
+    public int GetID() {
         return ID;
     }
     private String settlementName;
