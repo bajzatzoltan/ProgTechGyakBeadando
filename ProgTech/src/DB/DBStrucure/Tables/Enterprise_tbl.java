@@ -56,13 +56,17 @@ public class Enterprise_tbl<P> implements ITable<Enterprise> {
 
     @Override
     public void Update(int ID, Enterprise individual) {
-        for (Enterprise x :  listEnterprise) {
-            if (x.GetID() == ID){
-                x = individual;
+        int counter = 0;
+        while (counter < listEnterprise.size()){
+            if (listEnterprise.get(counter).GetID() == ID){
+                listEnterprise.set(counter, individual);
+                counter = listEnterprise.size() + 1;
             }
+            counter++;
         }
-        
-
+        if (counter == listEnterprise.size()){
+            throw  new ArrayIndexOutOfBoundsException("Enterprise_tbl.listEnterprise does not contain this ID");
+        }
     }
 
     @Override
@@ -81,8 +85,4 @@ public class Enterprise_tbl<P> implements ITable<Enterprise> {
         return (Enterprise) resultInstance.clone();
     }
 
-
-    private void AddRelation(P parent) {
-        Relations_tbl.GetInstance().AddRelation(parent, instance);
-    }
 }

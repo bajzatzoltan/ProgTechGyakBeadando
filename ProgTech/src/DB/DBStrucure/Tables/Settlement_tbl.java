@@ -10,7 +10,7 @@ import DB.DBStrucure.Relations_tbl;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Settlement_tbl<P> implements ITable<Settlement> {
+public class Settlement_tbl implements ITable<Settlement> {
     private static Settlement_tbl instance;
     private List<Settlement> listSettlement;
     private int rowId;
@@ -50,10 +50,16 @@ public class Settlement_tbl<P> implements ITable<Settlement> {
 
     @Override
     public void Update(int ID, Settlement individual) {
-        for (Settlement x :  listSettlement) {
-            if (x.GetID() == ID) {
-                x = individual;
+        int counter = 0;
+        while (counter < listSettlement.size()){
+            if (listSettlement.get(counter).GetID() == ID){
+                listSettlement.set(counter, individual);
+                counter = listSettlement.size() + 1;
             }
+            counter++;
+        }
+        if (counter == listSettlement.size()){
+            throw  new ArrayIndexOutOfBoundsException("Settlement_tbl.listSettlement does not contain this ID");
         }
     }
 
@@ -71,11 +77,6 @@ public class Settlement_tbl<P> implements ITable<Settlement> {
             throw  new IndexOutOfBoundsException("Settlement_tbl.listSettlement does not contain this ID");
         }
         return (Settlement) resultInstance.clone();
-    }
-
-
-    private void AddRelation(P parent) {
-        Relations_tbl.GetInstance().AddRelation(parent, instance);
     }
 
     @Override

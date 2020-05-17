@@ -10,7 +10,7 @@ import java.util.List;
 
 //singleton
 
-public class Person_tbl<P> implements ITable<Person> {
+public class Person_tbl implements ITable<Person> {
     private List<Person> listPerson;
     private int rowId;
     private static volatile Person_tbl instance;
@@ -53,11 +53,16 @@ public class Person_tbl<P> implements ITable<Person> {
     }
     @Override
     public void Update(int ID, Person individual) {
-        for (Person x :  listPerson) {
-            if (x.GetID() == ID) {
-                x = individual;
-
+        int counter = 0;
+        while (counter < listPerson.size()){
+            if (listPerson.get(counter).GetID() == ID){
+                listPerson.set(counter, individual);
+                counter = listPerson.size() + 1;
             }
+            counter++;
+        }
+        if (counter == listPerson.size()){
+            throw  new ArrayIndexOutOfBoundsException("Person_tbl.listPerson does not contain this ID");
         }
     }
 
@@ -76,9 +81,5 @@ public class Person_tbl<P> implements ITable<Person> {
         }
         return (Person)resultInstance.clone();
     }
-    private void AddRelation(P parent) {
-        Relations_tbl.GetInstance().AddRelation(parent, instance);
-    }
-
 
 }
