@@ -1,22 +1,19 @@
 package DB.DBStrucure.Tables;
 
-import DB.DBStrucure.Individuals.IIndividual;
+import Client.RowSettlement;
 import DB.DBStrucure.Individuals.IndividualFactory;
-import DB.DBStrucure.Individuals.Person;
 import DB.DBStrucure.Individuals.Settlement;
-import DB.DBStrucure.Relation;
-import DB.DBStrucure.Relations_tbl;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Settlement_tbl implements ITable<Settlement> {
-    private static Settlement_tbl instance;
+public class Settlement_tbl implements ITable<RowSettlement,Settlement> {
+    private static volatile Settlement_tbl instance;
     private List<Settlement> listSettlement;
     private int rowId;
 
     public static Settlement_tbl GetInstance() {
-        if (instance.equals(null)) {
+        if (instance == null) {
             instance = new Settlement_tbl();
         }
         return  instance;
@@ -28,9 +25,12 @@ public class Settlement_tbl implements ITable<Settlement> {
     }
 
     @Override
-    public void Insert(Settlement individual) {
+    public void Insert(RowSettlement individual) {
         rowId++;
-        listSettlement.add((Settlement)(IndividualFactory.GetInstance().GetIndividual(rowId, "Settlement")));
+        Settlement concrateIndividual =
+                (Settlement)IndividualFactory.GetInstance().GetIndividual(rowId, "Settlement");
+        concrateIndividual.setSettlementName(individual.getSettlementName());
+        listSettlement.add(concrateIndividual);
     }
 
     @Override
@@ -49,11 +49,14 @@ public class Settlement_tbl implements ITable<Settlement> {
     }
 
     @Override
-    public void Update(int ID, Settlement individual) {
+    public void Update(int ID, RowSettlement individual) {
         int counter = 0;
         while (counter < listSettlement.size()){
             if (listSettlement.get(counter).GetID() == ID){
-                listSettlement.set(counter, individual);
+                Settlement concrateIndividual =
+                        (Settlement)IndividualFactory.GetInstance().GetIndividual(ID, "Settlement");
+                concrateIndividual.setSettlementName(individual.getSettlementName());
+                listSettlement.set(counter, concrateIndividual);
                 counter = listSettlement.size() + 1;
             }
             counter++;

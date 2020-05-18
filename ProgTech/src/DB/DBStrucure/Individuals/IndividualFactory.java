@@ -10,7 +10,7 @@ public class IndividualFactory implements IIndividualFactory{
 
     }
     public static IndividualFactory GetInstance(){
-        if(instance.equals(null))
+        if(instance == null)
         {
             instance = new IndividualFactory();
         }

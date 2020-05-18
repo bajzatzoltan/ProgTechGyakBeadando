@@ -1,16 +1,13 @@
 package DB.DBStrucure.Tables;
 
-import DB.DBStrucure.Individuals.IIndividual;
+import Client.RowPerson;
 import DB.DBStrucure.Individuals.IndividualFactory;
 import DB.DBStrucure.Individuals.Person;
-import DB.DBStrucure.Relations_tbl;
 
 import java.util.ArrayList;
 import java.util.List;
 
-//singleton
-
-public class Person_tbl implements ITable<Person> {
+public class Person_tbl implements ITable<RowPerson, Person> {
     private List<Person> listPerson;
     private int rowId;
     private static volatile Person_tbl instance;
@@ -19,7 +16,7 @@ public class Person_tbl implements ITable<Person> {
         rowId = 0;
     }
     public static Person_tbl GetInstance(){
-        if (instance.equals(null)) {
+        if (instance == null) {
             instance = new Person_tbl();
         }
         return instance;
@@ -33,9 +30,15 @@ public class Person_tbl implements ITable<Person> {
         return cloneList;
     }
     @Override
-    public void Insert(Person individual) {
+    public void Insert(RowPerson individual) throws CloneNotSupportedException {
         rowId++;
-        listPerson.add((Person)(IndividualFactory.GetInstance().GetIndividual(rowId, "Person")));
+        Person concrateIndividual =
+                (Person)IndividualFactory.GetInstance().GetIndividual(rowId, "Person");
+        concrateIndividual.setSettlement_ID_fk(individual.getSettlement_ID_fk());
+        concrateIndividual.SetFirstName(individual.GetFirstName());
+        concrateIndividual.SetLastName(individual.GetFirstName());
+        concrateIndividual.SetBirthDay(individual.GetBirthDay());
+        listPerson.add(concrateIndividual);
     }
     @Override
     public void Delete(int ID) {
@@ -52,11 +55,17 @@ public class Person_tbl implements ITable<Person> {
         }
     }
     @Override
-    public void Update(int ID, Person individual) {
+    public void Update(int ID, RowPerson individual) throws CloneNotSupportedException {
         int counter = 0;
         while (counter < listPerson.size()){
             if (listPerson.get(counter).GetID() == ID){
-                listPerson.set(counter, individual);
+                Person concrateIndividual =
+                        (Person)IndividualFactory.GetInstance().GetIndividual(ID, "Person");
+                concrateIndividual.setSettlement_ID_fk(individual.getSettlement_ID_fk());
+                concrateIndividual.SetFirstName(individual.GetFirstName());
+                concrateIndividual.SetLastName(individual.GetFirstName());
+                concrateIndividual.SetBirthDay(individual.GetBirthDay());
+                listPerson.set(counter, concrateIndividual);
                 counter = listPerson.size() + 1;
             }
             counter++;

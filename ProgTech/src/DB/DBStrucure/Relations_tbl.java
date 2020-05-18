@@ -20,7 +20,7 @@ public class Relations_tbl <P, C> {
         listRelations = new ArrayList<Relation>();
     }
     public static Relations_tbl GetInstance() {
-        if (instance.equals(null)) {
+        if (instance == null) {
             instance = new Relations_tbl();
         }
         return instance;

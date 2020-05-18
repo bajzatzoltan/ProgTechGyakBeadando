@@ -3,11 +3,15 @@ package DB.DBStrucure;
 import java.util.*;
 
 public class Users_tbl {
-    private static Users_tbl instance;
-    private Map<String, String> userList = new HashMap<String, String>();
+    private static volatile Users_tbl instance;
+    private Map<String, String> userList;
+    private Users_tbl()
+    {
+        userList = new HashMap<String, String>();
+    }
 
     public static Users_tbl GetInstance() {
-        if (instance.equals(null)) {
+        if (instance == null) {
             instance = new Users_tbl();
         }
         return  instance;

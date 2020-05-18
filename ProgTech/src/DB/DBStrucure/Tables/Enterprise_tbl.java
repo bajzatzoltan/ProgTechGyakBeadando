@@ -1,14 +1,12 @@
 package DB.DBStrucure.Tables;
 
+import Client.RowEnterprise;
 import DB.DBStrucure.Individuals.Enterprise;
-import DB.DBStrucure.Individuals.IIndividual;
 import DB.DBStrucure.Individuals.IndividualFactory;
-import DB.DBStrucure.Relations_tbl;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class Enterprise_tbl<P> implements ITable<Enterprise> {
+public class Enterprise_tbl implements ITable<RowEnterprise, Enterprise> {
 
     private static volatile Enterprise_tbl instance;
     private List<Enterprise>  listEnterprise;
@@ -18,7 +16,7 @@ public class Enterprise_tbl<P> implements ITable<Enterprise> {
         rowId = 0;
     }
     public static Enterprise_tbl GetInstance(){
-        if (instance.equals(null)){
+        if (instance == null){
             instance = new Enterprise_tbl();
         }
         return instance;
@@ -34,9 +32,14 @@ public class Enterprise_tbl<P> implements ITable<Enterprise> {
     }
 
     @Override
-    public void Insert(Enterprise individual) {
+    public void Insert(RowEnterprise individual) throws CloneNotSupportedException {
         rowId++;
-        listEnterprise.add((Enterprise)(IndividualFactory.GetInstance().GetIndividual(rowId, "Enterprise")));
+        Enterprise concrateIndividual =
+                (Enterprise)IndividualFactory.GetInstance().GetIndividual(rowId, "Enterprise");
+        concrateIndividual.setName(individual.getName());
+        concrateIndividual.setTaxNumber(individual.getTaxNumber());
+        concrateIndividual.setSettlement_ID_fk(individual.getSettlement_ID_fk());
+        listEnterprise.add(concrateIndividual);
     }
 
     @Override
@@ -55,11 +58,16 @@ public class Enterprise_tbl<P> implements ITable<Enterprise> {
     }
 
     @Override
-    public void Update(int ID, Enterprise individual) {
+    public void Update(int ID, RowEnterprise individual) throws CloneNotSupportedException {
         int counter = 0;
         while (counter < listEnterprise.size()){
             if (listEnterprise.get(counter).GetID() == ID){
-                listEnterprise.set(counter, individual);
+                Enterprise concrateIndividual =
+                        (Enterprise)IndividualFactory.GetInstance().GetIndividual(ID, "Enterprise");
+                concrateIndividual.setName(individual.getName());
+                concrateIndividual.setTaxNumber(individual.getTaxNumber());
+                concrateIndividual.setSettlement_ID_fk(individual.getSettlement_ID_fk());
+                listEnterprise.set(counter, concrateIndividual);
                 counter = listEnterprise.size() + 1;
             }
             counter++;
