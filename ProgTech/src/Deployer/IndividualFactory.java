@@ -1,5 +1,7 @@
 package Deployer;
 
+import Client.RowEnterprise;
+import Client.RowPerson;
 import Client.RowSettlement;
 import DB.DBStrucure.Individuals.Enterprise;
 import DB.DBStrucure.Individuals.IIndividual;
@@ -13,6 +15,14 @@ public class IndividualFactory {
     public Object GetIndividual(String type) {
         if (type == "RowSettlement"){
             result = new RowSettlement();
+        }
+        else if(type == "RowPerson")
+        {
+            result = new RowPerson();
+        }
+        else if(type == "RowEnterprise")
+        {
+            result = new RowEnterprise();
         }
         else{
             throw new NotImplementedException();

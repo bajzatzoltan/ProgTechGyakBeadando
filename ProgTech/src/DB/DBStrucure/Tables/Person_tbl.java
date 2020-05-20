@@ -36,7 +36,7 @@ public class Person_tbl implements ITable<RowPerson, Person> {
                 (Person)IndividualFactory.GetInstance().GetIndividual(rowId, "Person");
         concrateIndividual.setSettlement_ID_fk(individual.getSettlement_ID_fk());
         concrateIndividual.SetFirstName(individual.GetFirstName());
-        concrateIndividual.SetLastName(individual.GetFirstName());
+        concrateIndividual.SetLastName(individual.GetLastName());
         concrateIndividual.SetBirthDay(individual.GetBirthDay());
         listPerson.add(concrateIndividual);
     }
