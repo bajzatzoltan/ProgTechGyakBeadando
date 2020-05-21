@@ -40,13 +40,13 @@ public class InterfaceFacade {
     }
 
 
-    public void Person_tbl_Insert(IRowIndividual individual) throws CloneNotSupportedException {
+    public void Person_tbl_Insert(IRowIndividual individual) throws Exception {
         Person_tbl.GetInstance().Insert((RowPerson)individual);
     }
     public void Person_tbl_Delete(int ID){
         Person_tbl.GetInstance().Delete(ID);
     }
-    public void Person_tbl_Update(int ID, IRowIndividual individual) throws CloneNotSupportedException {
+    public void Person_tbl_Update(int ID, IRowIndividual individual) throws Exception {
         Person_tbl.GetInstance().Update(ID,(RowPerson)individual);
     }
     public List<Person> Person_tbl_SelectAll()throws CloneNotSupportedException {

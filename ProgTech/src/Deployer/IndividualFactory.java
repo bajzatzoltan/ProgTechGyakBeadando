@@ -1,15 +1,15 @@
 package Deployer;
 
+import Client.Individuals.IRowIndividual;
 import Client.Individuals.RowEnterprise;
 import Client.Individuals.RowPerson;
 import Client.Individuals.RowSettlement;
-import DB.DBStrucure.User;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 
 public class IndividualFactory {
-    private Object result;
-    public Object GetIndividual(String type) {
+    private IRowIndividual result;
+    public IRowIndividual GetIndividual(String type) {
         if (type == "RowSettlement"){
             result = new RowSettlement();
         }

@@ -30,7 +30,7 @@ public class Person_tbl implements ITable<RowPerson, Person> {
         return cloneList;
     }
     @Override
-    public void Insert(RowPerson individual) throws CloneNotSupportedException {
+    public void Insert(RowPerson individual) throws Exception {
         rowId++;
         Person concrateIndividual =
                 (Person)IndividualFactory.GetInstance().GetIndividual(rowId, "Person");
@@ -55,7 +55,7 @@ public class Person_tbl implements ITable<RowPerson, Person> {
         }
     }
     @Override
-    public void Update(int ID, RowPerson individual) throws CloneNotSupportedException {
+    public void Update(int ID, RowPerson individual) throws Exception {
         int counter = 0;
         while (counter < listPerson.size()){
             if (listPerson.get(counter).GetID() == ID){

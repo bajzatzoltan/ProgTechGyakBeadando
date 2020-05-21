@@ -51,7 +51,7 @@ public class Deployer {
         Settlement_tbl.GetInstance().Insert(individual02);
         Settlement_tbl.GetInstance().Insert(individual03);
     }
-    private  void InsertPersons() throws ParseException, CloneNotSupportedException {
+    private  void InsertPersons() throws Exception {
         RowPerson individual01 = (RowPerson) factory.GetIndividual("RowPerson");
         individual01.SetFirstName("Kis");
         individual01.SetLastName("Cica");

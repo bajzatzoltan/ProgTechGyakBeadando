@@ -15,7 +15,7 @@ public class DMLInsert extends  AbsDMLOperation{
     }
 
     @Override
-    protected void ExecuteCommand() throws CloneNotSupportedException {
+    protected void ExecuteCommand() throws Exception {
         if (rowIndividual.getClass() == RowPerson.class){
             interfaceFacade.Person_tbl_Insert(rowIndividual);
         }

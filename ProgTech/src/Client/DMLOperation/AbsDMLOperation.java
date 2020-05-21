@@ -16,5 +16,5 @@ public abstract class AbsDMLOperation {
     protected void GetDbSession() throws Exception {
         interfaceFacade = new InterfaceFacade(user);
     }
-    abstract protected void ExecuteCommand() throws CloneNotSupportedException;
+    abstract protected void ExecuteCommand() throws Exception;
 }

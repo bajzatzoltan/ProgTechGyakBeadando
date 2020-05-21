@@ -39,9 +39,13 @@ public class Person implements IIndividual, Cloneable{
     {
         return birthDay;
     }
-    public void SetBirthDay(Date birthDay)
-    {
-        this.birthDay = birthDay;
+    public void SetBirthDay(Date birthDay) throws Exception {
+        if (birthDay.before(new Date())){
+            this.birthDay = birthDay;
+        }
+        else{
+            throw new Exception("Invalid birthday date.");
+        }
         int tempCurrentYear = Calendar.getInstance().get(Calendar.YEAR);
         LocalDate localdateBirthday = birthDay.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
         int birthdayYear = localdateBirthday.getYear();
