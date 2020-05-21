@@ -1,8 +1,9 @@
 package DB;
 
-import Client.RowEnterprise;
-import Client.RowPerson;
-import Client.RowSettlement;
+import Client.Individuals.IRowIndividual;
+import Client.Individuals.RowEnterprise;
+import Client.Individuals.RowPerson;
+import Client.Individuals.RowSettlement;
 import DB.DBStrucure.Individuals.Enterprise;
 import DB.DBStrucure.Individuals.Person;
 import DB.DBStrucure.Individuals.Settlement;
@@ -22,14 +23,14 @@ public class InterfaceFacade {
         }
     }
 
-    public void Enterprise_tbl_Insert(RowEnterprise individual) throws CloneNotSupportedException {
-        Enterprise_tbl.GetInstance().Insert(individual);
+    public void Enterprise_tbl_Insert(IRowIndividual individual) throws CloneNotSupportedException {
+        Enterprise_tbl.GetInstance().Insert((RowEnterprise)individual);
     }
     public void Enterprise_tbl_Delete(int ID){
         Enterprise_tbl.GetInstance().Delete(ID);
     }
-    public void Enterprise_tbl_Update(int ID, RowEnterprise individual) throws CloneNotSupportedException {
-        Enterprise_tbl.GetInstance().Update(ID, individual);
+    public void Enterprise_tbl_Update(int ID, IRowIndividual individual) throws CloneNotSupportedException {
+        Enterprise_tbl.GetInstance().Update(ID, (RowEnterprise)individual);
     }
     public List<Enterprise> Enterprise_tbl_SelectAll() throws  CloneNotSupportedException{
         return Enterprise_tbl.GetInstance().SelectAll();
@@ -39,16 +40,15 @@ public class InterfaceFacade {
     }
 
 
-    public void Person_tbl_Insert(RowPerson individual) throws CloneNotSupportedException {
-        Person_tbl.GetInstance().Insert(individual);
+    public void Person_tbl_Insert(IRowIndividual individual) throws CloneNotSupportedException {
+        Person_tbl.GetInstance().Insert((RowPerson)individual);
     }
     public void Person_tbl_Delete(int ID){
-        Person_tbl.GetInstance();
+        Person_tbl.GetInstance().Delete(ID);
     }
-    public void Person_tbl_Update(int ID, RowPerson individual) throws CloneNotSupportedException {
-        Person_tbl.GetInstance().Update(ID,individual);
+    public void Person_tbl_Update(int ID, IRowIndividual individual) throws CloneNotSupportedException {
+        Person_tbl.GetInstance().Update(ID,(RowPerson)individual);
     }
-
     public List<Person> Person_tbl_SelectAll()throws CloneNotSupportedException {
         return Person_tbl.GetInstance().SelectAll();
     }
@@ -57,16 +57,15 @@ public class InterfaceFacade {
     }
 
 
-    public void Settlement_tbl_Insert(RowSettlement individual){
-        Settlement_tbl.GetInstance().Insert(individual);
+    public void Settlement_tbl_Insert(IRowIndividual individual){
+        Settlement_tbl.GetInstance().Insert((RowSettlement)individual);
     }
     public void Settlement_tbl_Delete(int ID){
         Settlement_tbl.GetInstance().Delete(ID);
     }
-    public void Settlement_tbl_Update(int ID, RowSettlement individual){
-        Settlement_tbl.GetInstance().Update(ID, individual);
+    public void Settlement_tbl_Update(int ID, IRowIndividual individual){
+        Settlement_tbl.GetInstance().Update(ID, (RowSettlement)individual);
     }
-
     public List<Settlement> Settlement_tbl_SelectAll() throws CloneNotSupportedException{
         return Settlement_tbl.GetInstance().SelectAll();
     }

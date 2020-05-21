@@ -1,12 +1,9 @@
 package Deployer;
 
-import Client.RowEnterprise;
-import Client.RowPerson;
-import Client.RowSettlement;
-import DB.DBStrucure.Individuals.Enterprise;
-import DB.DBStrucure.Individuals.IIndividual;
-import DB.DBStrucure.Individuals.Person;
-import DB.DBStrucure.Individuals.Settlement;
+import Client.Individuals.RowEnterprise;
+import Client.Individuals.RowPerson;
+import Client.Individuals.RowSettlement;
+import DB.DBStrucure.User;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 

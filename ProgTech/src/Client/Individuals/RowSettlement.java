@@ -1,6 +1,7 @@
-package Client;
+package Client.Individuals;
 
-public class RowSettlement {
+public class RowSettlement implements IRowIndividual {
+
     private String settlementName;
     public String getSettlementName() {
         return settlementName;

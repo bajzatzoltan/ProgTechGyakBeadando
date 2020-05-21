@@ -1,6 +1,7 @@
-package Client;
+package Client.Individuals;
 
-public class RowEnterprise {
+public class RowEnterprise implements IRowIndividual {
+
     private String name;
     private String taxNumber;
     private int settlement_ID_fk;

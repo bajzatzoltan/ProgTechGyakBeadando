@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f83577ef-7b21-4c20-92c5-49f09534ce49" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgTech/Client/RowEnterprise.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgTech/Client/RowPerson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgTech/Client/RowSettlement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgTech/DB/DBStrucure/Tables/Enterprise_tbl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProgTech/DB/DBStrucure/Tables/Enterprise_tbl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgTech/DB/DBStrucure/Tables/Person_tbl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProgTech/DB/DBStrucure/Tables/Person_tbl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgTech/DB/DBStrucure/Tables/Settlement_tbl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProgTech/DB/DBStrucure/Tables/Settlement_tbl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgTech/DB/InterfaceFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProgTech/DB/InterfaceFacade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgTech/Deployer/Deployer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProgTech/Deployer/Deployer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgTech/Deployer/IndividualFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProgTech/Deployer/IndividualFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProgTech/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProgTech/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client/RowEnterprise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Individuals/RowEnterprise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client/RowPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Individuals/RowPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client/RowSettlement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client/Individuals/RowSettlement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/DBStrucure/Tables/Enterprise_tbl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/DBStrucure/Tables/Enterprise_tbl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DB/DBStrucure/Tables/Person_tbl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/DBStrucure/Tables/Person_tbl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/DBStrucure/Tables/Settlement_tbl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/DBStrucure/Tables/Settlement_tbl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DB/InterfaceFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DB/InterfaceFacade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Deployer/Deployer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deployer/Deployer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Deployer/IndividualFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deployer/IndividualFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
@@ -19,23 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Deployer/IndividualFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+            <state relative-caret-position="275">
+              <caret line="287" column="5" lean-forward="true" selection-start-line="287" selection-start-column="5" selection-end-line="287" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,12 +49,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Deployer/Deployer.java">
+        <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/JoinSelect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="88" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#122#123#0" expanded="true" />
+                <element signature="e#160#161#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,17 +64,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Users_tbl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+            <state relative-caret-position="442">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Tables/Person_tbl.java">
+        <entry file="file://$PROJECT_DIR$/src/DB/InterfaceFacade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+            <state relative-caret-position="124">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1746#1747#0" expanded="true" />
+                <element signature="e#1797#1798#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/JoinSelectDecorator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <folding>
+                <element signature="e#186#187#0" expanded="true" />
+                <element signature="e#229#230#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/DMLSelectById.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,10 +110,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Individuals/Person.java">
+        <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/SelectSettlementById.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="27" column="27" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="27" />
+            <state relative-caret-position="102">
+              <caret line="6" column="63" lean-forward="true" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,10 +122,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Tables/Settlement_tbl.java">
+        <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/SelectPersonById.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="30" column="79" selection-start-line="30" selection-start-column="79" selection-end-line="30" selection-end-column="79" />
+            <state relative-caret-position="88">
+              <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,10 +134,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Relations_tbl.java">
+        <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/SelectEnterpriseByID.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="105">
+              <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,10 +146,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Relation.java">
+        <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/DMLDelete.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="56">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,21 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/DB/ITable.java" />
-        <option value="$PROJECT_DIR$/src/DB/ITableSingleton.java" />
-        <option value="$PROJECT_DIR$/src/DB/IIndividual.java" />
-        <option value="$PROJECT_DIR$/src/DB/AbsTable.java" />
-        <option value="$PROJECT_DIR$/src/DB/Person.java" />
-        <option value="$PROJECT_DIR$/src/DB/DBStrucure/AbsTable.java" />
-        <option value="$PROJECT_DIR$/src/DB/DBStrucure/Person.java" />
-        <option value="$PROJECT_DIR$/src/DB/DBStrucure/Settlement.java" />
-        <option value="$PROJECT_DIR$/src/DB/DBStrucure/Enterprise.java" />
-        <option value="$PROJECT_DIR$/src/DB/DBStrucure/Individuals/IIndividual.java" />
-        <option value="$PROJECT_DIR$/src/DB/Person_tbl.java" />
-        <option value="$PROJECT_DIR$/src/DB/DBStrucure/ITable.java" />
-        <option value="$PROJECT_DIR$/src/DB/Enterprise_tbl.java" />
-        <option value="$PROJECT_DIR$/src/DB/DBStrucure/Enterprise_tbl.java" />
-        <option value="$PROJECT_DIR$/src/DB/DBStrucure/Scheduler.java" />
         <option value="$PROJECT_DIR$/src/DB/Relation.java" />
         <option value="$PROJECT_DIR$/src/DB/DBStrucure/Relation_tbl.java" />
         <option value="$PROJECT_DIR$/src/DB/DBStrucure/OneOneRelationType.java" />
@@ -175,11 +196,7 @@
         <option value="$PROJECT_DIR$/src/DB/DBStrucure/User.java" />
         <option value="$PROJECT_DIR$/src/Deployer/DeployDB.java" />
         <option value="$PROJECT_DIR$/src/Deployer/IIndividualFactory.java" />
-        <option value="$PROJECT_DIR$/src/Client/RowEnterprise.java" />
         <option value="$PROJECT_DIR$/src/DB/DBStrucure/Tables/ITable.java" />
-        <option value="$PROJECT_DIR$/src/Client/RowPerson.java" />
-        <option value="$PROJECT_DIR$/src/DB/InterfaceFacade.java" />
-        <option value="$PROJECT_DIR$/src/Client/RowSettlement.java" />
         <option value="$PROJECT_DIR$/src/Deployer/IndividualAbstractFactory.java" />
         <option value="$PROJECT_DIR$/src/DB/DBStrucure/Individuals/IndividualFactory.java" />
         <option value="$PROJECT_DIR$/src/DB/DBStrucure/Relations_tbl.java" />
@@ -187,9 +204,31 @@
         <option value="$PROJECT_DIR$/src/DB/DBStrucure/Tables/Settlement_tbl.java" />
         <option value="$PROJECT_DIR$/src/DB/DBStrucure/Tables/Enterprise_tbl.java" />
         <option value="$PROJECT_DIR$/src/Deployer/IndividualAbsFactory.java" />
-        <option value="$PROJECT_DIR$/src/Deployer/IndividualFactory.java" />
         <option value="$PROJECT_DIR$/src/DB/DBStrucure/Tables/Person_tbl.java" />
+        <option value="$PROJECT_DIR$/src/Client/Individuals.java" />
+        <option value="$PROJECT_DIR$/src/Client/RowEnterprise.java" />
+        <option value="$PROJECT_DIR$/src/Client/RowPerson.java" />
+        <option value="$PROJECT_DIR$/src/Client/RowSettlement.java" />
+        <option value="$PROJECT_DIR$/src/Deployer/IndividualFactory.java" />
         <option value="$PROJECT_DIR$/src/Deployer/Deployer.java" />
+        <option value="$PROJECT_DIR$/src/Client/Individuals/RowEnterprise.java" />
+        <option value="$PROJECT_DIR$/src/Client/Individuals/RowPerson.java" />
+        <option value="$PROJECT_DIR$/src/Client/Individuals/RowSettlement.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/DMLSelectAllFactory.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/DMLSelectAll.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/DMLSelectAllSettlement_tbl.java" />
+        <option value="$PROJECT_DIR$/src/DB/InterfaceFacade.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/AbsDMLOperation.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/DMLDelete.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/DMLInsert.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/DMLUpdate.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/JoinSelect.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/IJoinSelect.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/DMLSelectById.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/JoinSelectDecorator.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/SelectPersonById.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/SelectSettlementById.java" />
+        <option value="$PROJECT_DIR$/src/Client/DMLOperation/SelectEnterpriseByID.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
@@ -208,7 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,6 +269,20 @@
               <item name="ProgTech" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProgTech" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="DMLOperation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProgTech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProgTech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="Individuals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProgTech" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProgTech" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -243,44 +295,25 @@
               <item name="ProgTech" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProgTech" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DB" type="462c0819:PsiDirectoryNode" />
-              <item name="DBStrucure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProgTech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProgTech" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DB" type="462c0819:PsiDirectoryNode" />
-              <item name="DBStrucure" type="462c0819:PsiDirectoryNode" />
-              <item name="Individuals" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProgTech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProgTech" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DB" type="462c0819:PsiDirectoryNode" />
-              <item name="DBStrucure" type="462c0819:PsiDirectoryNode" />
-              <item name="Tables" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProgTech" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProgTech" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Deployer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590006887552" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590072527457" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Client" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Source\Java\ProgTechGyakBeadando\ProgTech\src\DB" />
     </key>
@@ -329,8 +362,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18229954" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18532526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -338,8 +372,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25603864" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -358,7 +392,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24357034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18532526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -366,16 +400,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32850242" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25603864" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32850242" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32850242" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.32850242" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -390,22 +424,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Deployer/IndividualFactory.java</url>
-          <line>12</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>16</line>
+          <line>274</line>
           <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Deployer/Deployer.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -432,38 +454,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Client.java" />
-    <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Client/RowEnterprise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="26" />
-          <folding>
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Individuals/IIndividual.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -478,23 +468,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Client/RowPerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Client/RowSettlement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -525,16 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DB/InterfaceFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="59" column="37" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Individuals/Settlement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -552,10 +515,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Users_tbl.java">
+    <entry file="file://$PROJECT_DIR$/src/Deployer/IndividualAbsFactory.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/text/DateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="365" selection-start-line="365" selection-end-line="365" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Individuals/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -569,29 +543,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Deployer/IndividualAbsFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="e#107#108#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Relation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Relations_tbl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="306">
           <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -599,27 +553,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/text/DateFormat.java">
+    <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Relation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="365" selection-start-line="365" selection-end-line="365" />
+        <state relative-caret-position="187">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Deployer/IndividualFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="372">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Individuals/Person.java">
+    <entry file="file://$PROJECT_DIR$/src/Client/Individuals/RowSettlement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="27" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/Individuals/RowPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/Individuals/IRowIndividual.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/Individuals/RowEnterprise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/DMLSelectAllFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/DMLSelectAllSettlement_tbl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Deployer/Deployer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="71" selection-start-line="71" selection-end-line="74" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#105#106#0" expanded="true" />
+            <element signature="e#136#137#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/DMLInsert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/DMLUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/AbsDMLOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -628,18 +672,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Tables/Person_tbl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        <state relative-caret-position="166">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Deployer/Deployer.java">
+    <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/IJoinSelect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="88" />
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/DMLSelectById.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/DMLDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DB/DBStrucure/Users_tbl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DB/InterfaceFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1746#1747#0" expanded="true" />
+            <element signature="e#1797#1798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/JoinSelect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#122#123#0" expanded="true" />
+            <element signature="e#160#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/JoinSelectDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/SelectPersonById.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/SelectSettlementById.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="63" lean-forward="true" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Client/DMLOperation/SelectEnterpriseByID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -648,8 +780,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        <state relative-caret-position="275">
+          <caret line="287" column="5" lean-forward="true" selection-start-line="287" selection-start-column="5" selection-end-line="287" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

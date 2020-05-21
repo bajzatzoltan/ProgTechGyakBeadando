@@ -1,6 +1,6 @@
 package DB.DBStrucure.Tables;
 
-import Client.RowPerson;
+import Client.Individuals.RowPerson;
 import DB.DBStrucure.Individuals.IndividualFactory;
 import DB.DBStrucure.Individuals.Person;
 

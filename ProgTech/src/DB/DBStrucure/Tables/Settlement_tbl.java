@@ -1,6 +1,6 @@
 package DB.DBStrucure.Tables;
 
-import Client.RowSettlement;
+import Client.Individuals.RowSettlement;
 import DB.DBStrucure.Individuals.IndividualFactory;
 import DB.DBStrucure.Individuals.Settlement;
 

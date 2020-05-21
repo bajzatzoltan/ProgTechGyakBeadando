@@ -1,6 +1,6 @@
 package DB.DBStrucure.Tables;
 
-import Client.RowEnterprise;
+import Client.Individuals.RowEnterprise;
 import DB.DBStrucure.Individuals.Enterprise;
 import DB.DBStrucure.Individuals.IndividualFactory;
 import java.util.ArrayList;

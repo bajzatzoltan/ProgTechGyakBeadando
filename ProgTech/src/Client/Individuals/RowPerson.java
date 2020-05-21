@@ -1,16 +1,11 @@
-package Client;
+package Client.Individuals;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.Date;
 
-public class RowPerson {
-    private int ID;
-    public int GetID()
-    {
-        return ID;
-    }
+public class RowPerson implements IRowIndividual {
     private String firstName;
     public String GetFirstName()
     {
