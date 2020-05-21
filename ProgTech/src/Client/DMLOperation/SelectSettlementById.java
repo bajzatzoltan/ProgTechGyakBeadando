@@ -21,7 +21,7 @@ public class SelectSettlementById extends JoinSelectDecorator {
 
     private String decorateWithSettlement() throws Exception {
         Settlement settlement = interfaceFacade.Settlement_tbl_GetInstanceByID(ID);
-        return " " + settlement.GetID() + ": " +
+        return settlement.GetID() + ": " +
                 settlement.getSettlementName() ;
     }
 }

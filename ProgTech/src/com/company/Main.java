@@ -271,6 +271,10 @@ public class Main {
         System.out.println();
         //endregion
 
+
+        //region CHECK JOINSELECT OPERATION
+        System.out.println("-----------------------------------------------------");
+        System.out.println("CHECK JOINSELECT OPERATION:");
         try {
             IJoinSelect joinSelect01 = new SelectSettlementById(user, 1, new JoinSelect());
             IJoinSelect joinSelect02 = new SelectEnterpriseByID(user, 1, (new SelectSettlementById(user, 1, (new JoinSelect()))));
@@ -285,5 +289,6 @@ public class Main {
         catch (Exception ex){
             System.out.println(ex.getMessage());
         }
+        //endregion
     }
 }
